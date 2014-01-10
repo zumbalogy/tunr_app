@@ -2,7 +2,17 @@
 
 
 <% @all.each do |band| %>
-    <p><%= band.name %></p>
+   
+   <a href="/bands/<%= band.id %>">
+
+    <%= band.name %>
+    </a>
+    <br />
+    <a href="/bands/<%= band.id %>/edit">
+        
+
+        edit <%= band.name %>
+    </a>
 
 <% end %>
 <p><%= @all[0].class %></p>

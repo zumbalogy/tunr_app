@@ -5,7 +5,7 @@ TunrApp::Application.routes.draw do
   resources :bands
 
 
-
+  post 'bands/:id' => 'bands#update'
 
 
   
