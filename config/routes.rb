@@ -7,6 +7,8 @@ TunrApp::Application.routes.draw do
 
   post 'bands/:id' => 'bands#update'
 
+  get '/' => 'bands#index'
+
 
   
   # The priority is based upon order of creation:
